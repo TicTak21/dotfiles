@@ -1,3 +1,3 @@
 # Dotfiles
 
-All dotfiles and config that I use.
+All dotfiles and configs that I use.
