@@ -147,9 +147,6 @@ eval "$(rbenv init -)"
 # colorls
 source $(dirname $(gem which colorls))/tab_complete.sh
 
-# broot
-source /Users/alex_kovalev/Library/Preferences/org.dystroy.broot/launcher/bash/br
-
 # python
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
