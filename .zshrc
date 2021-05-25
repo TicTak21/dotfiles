@@ -153,3 +153,13 @@ if command -v pyenv 1>/dev/null 2>&1; then
 fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# custom commands
+mkcd () {
+  if [ -z "$1" ]; then
+    echo "Usage: mkcd <dirname>"
+    return 1
+  fi
+  mkdir -p "$1"
+  cd "$1" || return
+}
