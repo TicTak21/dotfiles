@@ -1,3 +1,4 @@
+cd /Users/alex_kovalev/Desktop/Projects
 set lines=100 columns=100
 set number
 set linebreak
@@ -29,11 +30,9 @@ set showmatch
 set incsearch
 set hlsearch
 set foldenable
-set guifont=Monaco:h20
+set guifont=Hack\ Nerd\ Font:h20
 
 autocmd vimenter * colorscheme gruvbox
-
-let g:prettier#autoformat = 1
 
 call plug#begin('~/.vim/plugged')
 
@@ -41,8 +40,6 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'sheerun/vim-polyglot'
 Plug 'morhetz/gruvbox'
 Plug 'preservim/nerdtree'
-Plug 'airblade/vim-gitgutter'
-Plug 'prettier/vim-prettier'
 Plug 'jiangmiao/auto-pairs'
 
 call plug#end()
