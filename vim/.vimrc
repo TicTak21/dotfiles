@@ -32,14 +32,22 @@ set hlsearch
 set foldenable
 set guifont=Hack\ Nerd\ Font:h20
 
-autocmd vimenter * colorscheme gruvbox
+if (empty($TMUX))
+  if (has("nvim"))
+    let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+  endif
+  if (has("termguicolors"))
+    set termguicolors
+  endif
+endif
+
+autocmd vimenter * colorscheme onedark
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'terryma/vim-multiple-cursors'
 Plug 'sheerun/vim-polyglot'
-Plug 'morhetz/gruvbox'
 Plug 'preservim/nerdtree'
 Plug 'jiangmiao/auto-pairs'
+Plug 'joshdick/onedark.vim'
 
 call plug#end()
