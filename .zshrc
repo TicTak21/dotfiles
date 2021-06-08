@@ -19,9 +19,6 @@ export PATH="$PATH:/Users/alex_kovalev/.dotnet/tools"
 # sbin
 export PATH="/usr/local/sbin:$PATH"
 
-# python
-export PYTHONPATH=$PYTHONPATH:/Users/alex_kovalev/.pyenv/shims/python
-
 ZSH_THEME="spaceship"
 
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
@@ -149,11 +146,6 @@ eval "$(rbenv init -)"
 
 # === colorls ===
 source $(dirname $(gem which colorls))/tab_complete.sh
-
-# === python ===
-if command -v pyenv 1>/dev/null 2>&1; then
-  eval "$(pyenv init -)"
-fi
 
 # === fzf ===
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
