@@ -5,7 +5,7 @@
 export ZSH="/Users/alex_kovalev/.oh-my-zsh"
 
 # PostrgeSQL
-export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/12/bin
+export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/12/bin"
 
 # Flutter
 export PATH="$PATH:/Users/alex_kovalev/Desktop/Projects/Flutter/flutter/bin"
@@ -20,7 +20,6 @@ export PATH="$PATH:/Users/alex_kovalev/.dotnet/tools"
 export PATH="/usr/local/sbin:$PATH"
 
 # python
-# export PATH=/usr/local/bin:/usr/local/sbin:${PATH}
 export PYTHONPATH=$PYTHONPATH:/Users/alex_kovalev/.pyenv/shims/python
 
 ZSH_THEME="spaceship"
@@ -29,6 +28,7 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
+# === Aliases ===
 # vscode insiders
 # issue with double icons in doc(https://github.com/microsoft/vscode/issues/60579)
 # alias code="code-insiders -r"
@@ -112,7 +112,7 @@ alias sysmon='ytop'
 # 1) folder size
 alias calc_folder_size='du -hs'
 
-# Set Spaceship ZSH as a prompt
+# === spaceship-prompt ===
 autoload -U promptinit
 promptinit
 prompt spaceship
@@ -120,10 +120,6 @@ source /usr/local/share/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=white,bg=transparent,bold,underline"
 
-# Allow the use of the z plugin to easily navigate directories
-. /usr/local/etc/profile.d/z.sh
-
-# spaceship
 unsetopt PROMPT_SP
 
 SPACESHIP_DOCKER_SHOW=false
@@ -138,23 +134,31 @@ SPACESHIP_GIT_BRANCH_PREFIX="(${SPACESHIP_GIT_SYMBOL}"
 SPACESHIP_GIT_BRANCH_SUFFIX=')'
 SPACESHIP_GIT_BRANCH_COLOR=blue
 
-# tipz
+# SPACESHIP_CHAR_SYMBOL="🚀 "
+SPACESHIP_CHAR_SYMBOL="¯\_(ツ)_/¯ "
+
+# === Z-plugin ===
+. /usr/local/etc/profile.d/z.sh
+
+# === tipz ===
 source /Users/alex_kovalev/tipz/tipz.zsh
 TIPZ_TEXT="💡"
 
+# === rbenv ===
 eval "$(rbenv init -)"
 
-# colorls
+# === colorls ===
 source $(dirname $(gem which colorls))/tab_complete.sh
 
-# python
+# === python ===
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
 
+# === fzf ===
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# custom commands
+# === custom commands ===
 mkcd () {
   if [ -z "$1" ]; then
     echo "Usage: mkcd <dirname>"
