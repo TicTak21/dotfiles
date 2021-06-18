@@ -89,9 +89,6 @@ alias px='pnpx'
 # mysql
 alias mysql='/usr/local/mysql/bin/mysql -uroot -p'
 
-# cpp
-alias cpp_compile='g++ main.cpp && ./a.out'
-
 # rust
 alias c='cargo'
 alias cr='cargo run'
@@ -101,9 +98,6 @@ alias ct='cargo test'
 # postgresql
 alias psqlconfig='code ~/Library/ApplicationSupport/Postgres/var-12/postgresql.conf'
 alias pgconfig='code ~/Library/ApplicationSupport/Postgres/var-12/pg_hba.conf'
-
-# system monitoring
-alias sysmon='ytop'
 
 # disc usage
 # 1) folder size
