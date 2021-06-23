@@ -31,6 +31,9 @@ source $ZSH/oh-my-zsh.sh
 # alias code="code-insiders -r"
 alias code='open -b com.microsoft.VSCodeInsiders "$@"'
 
+# JetBrains Rider
+alias rider='open -na "Rider.app" --args "$@"'
+
 # sublime
 alias subl="open -a /Applications/Sublime\ Text.app"
 
