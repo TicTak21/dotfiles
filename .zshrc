@@ -1,14 +1,9 @@
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
-
-# Path to your oh-my-zsh installation.
+# === Exports ===
+# Oh-my-zsh
 export ZSH="/Users/alex_kovalev/.oh-my-zsh"
 
 # PostrgeSQL
 export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/12/bin"
-
-# Flutter
-export PATH="$PATH:/Users/alex_kovalev/Desktop/Projects/Flutter/flutter/bin"
 
 # yarn
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
@@ -19,16 +14,18 @@ export PATH="$PATH:/Users/alex_kovalev/.dotnet/tools"
 # sbin
 export PATH="/usr/local/sbin:$PATH"
 
-ZSH_THEME="spaceship"
-
+# === Plugins ===
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
+ZSH_THEME="spaceship"
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=white,bg=transparent,bold,underline"
+
+# === Oh-my-zsh init ===
 source $ZSH/oh-my-zsh.sh
 
 # === Aliases ===
 # vscode insiders
-# issue with double icons in doc(https://github.com/microsoft/vscode/issues/60579)
-# alias code="code-insiders -r"
+# issue with double icons in the Doc(https://github.com/microsoft/vscode/issues/60579)
 alias code='open -b com.microsoft.VSCodeInsiders "$@"'
 
 # JetBrains Rider
@@ -43,31 +40,18 @@ alias zshhistory="code $HISTFILE"
 alias clc="clear"
 alias t="touch"
 
-# ip
-alias external_ip="curl ipinfo.io/ip"
-alias local_ip="ipconfig getifaddr en0"
-
 # colorls
 alias ls='colorls'
 
 # git
 alias gs='git status'
-
-alias gl='git log'
 alias glol='git log --oneline'
-
-alias gaa='git add .'
 alias ga='git add'
-
-alias gc='git commit'
 alias gcm='git commit -m'
-
 alias gb='git branch'
 alias gc='git checkout'
-
 alias gp='git push'
 alias gpu='git push -u origin master'
-
 alias grc="git reset --hard && git clean -fd"
 
 # npm
@@ -85,37 +69,12 @@ alias yarn_g_list='yarn global list'
 
 # pnpm
 alias pn='pnpm'
-
-# pnpx
 alias px='pnpx'
 
 # mysql
 alias mysql='/usr/local/mysql/bin/mysql -uroot -p'
 
-# rust
-alias c='cargo'
-alias cr='cargo run'
-alias cb='cargo build'
-alias ct='cargo test'
-
-# postgresql
-alias psqlconfig='code ~/Library/ApplicationSupport/Postgres/var-12/postgresql.conf'
-alias pgconfig='code ~/Library/ApplicationSupport/Postgres/var-12/pg_hba.conf'
-
-# disc usage
-# 1) folder size
-alias calc_folder_size='du -hs'
-
 # === spaceship-prompt ===
-autoload -U promptinit
-promptinit
-prompt spaceship
-source /usr/local/share/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=white,bg=transparent,bold,underline"
-
-unsetopt PROMPT_SP
-
 SPACESHIP_DOCKER_SHOW=false
 
 SPACESHIP_TIME_SHOW=true
@@ -138,10 +97,9 @@ SPACESHIP_CHAR_SYMBOL="¯\_(ツ)_/¯ "
 source /Users/alex_kovalev/tipz/tipz.zsh
 TIPZ_TEXT="💡"
 
-# === rbenv ===
+# === rbenv & colorls ===
+# since `colorls` its a gem we need to setup ruby env
 eval "$(rbenv init -)"
-
-# === colorls ===
 source $(dirname $(gem which colorls))/tab_complete.sh
 
 # === fzf ===
