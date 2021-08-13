@@ -5,6 +5,3 @@ public
 dist
 build
 coverage
-
-# Ignore configs
-*.config.*
