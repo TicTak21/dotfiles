@@ -1,0 +1,10 @@
+# Ignore public
+public
+
+# Ignore artifacts:
+dist
+build
+coverage
+
+# Ignore configs
+*.config.*
