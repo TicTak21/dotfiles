@@ -1,0 +1,34 @@
+{
+  "Insert empty constructor": {
+    "prefix": "con",
+    "body": [
+      "constructor($1) {}",
+    ],
+    "description": "Insert empty constructor"
+  },
+  "Insert class property": {
+    "prefix": "prop",
+    "body": "$name: $type = $value;",
+    "description": "Insert class property"
+  },
+  "Insert class property(private)": {
+    "prefix": "pprop",
+    "body": "private $name: $type = $value;",
+    "description": "Insert class property(private)"
+  },
+  "Insert empty class": {
+    "prefix": "class",
+    "body": "export class $name {$0}",
+    "description": "Insert empty class"
+  },
+  "Insert class with constructor": {
+    "prefix": "cclass",
+    "body": ["export class $name {", "  constructor($params) {$0}", "}"],
+    "description": "Insert class with constructor"
+  },
+  "Insert DI item into constructor": {
+    "prefix": "di",
+    "body": "private readonly $item: $type",
+    "description": "Insert DI item into constructor"
+  }
+}
