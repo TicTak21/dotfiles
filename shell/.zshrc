@@ -102,9 +102,6 @@ TIPZ_TEXT="💡"
 eval "$(rbenv init -)"
 source $(dirname $(gem which colorls))/tab_complete.sh
 
-# === fzf ===
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
 # === custom commands ===
 mkcd () {
   if [ -z "$1" ]; then
