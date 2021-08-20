@@ -1,128 +1,83 @@
 {
-  "terminal.integrated.defaultProfile.osx": "zsh",
+  // === terminal ===
+  "terminal.integrated.tabs.showActiveTerminal": "always",
   "terminal.integrated.fontFamily": "Hack Nerd Font",
   "terminal.integrated.fontSize": 15,
-  "terminal.integrated.tabs.enabled": true,
-  "terminal.integrated.tabs.showActiveTerminal": "always",
   "terminal.integrated.tabs.hideCondition": "never",
-  "editor.fontFamily": "Hack Nerd Font",
-  "editor.formatOnSave": true,
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.tabs.enabled": true,
+
+  // === git ===
+  "gitlens.advanced.messages": {
+    "suppressImproperWorkspaceCasingWarning": true
+  },
+  "git.confirmSync": false,
+  "git.autofetch": true,
+
+  // === editor ===
+  "editor.suggestSelection": "first",
   "editor.formatOnPaste": true,
-  "editor.formatOnType": true,
-  "editor.codeLens": false,
-  "editor.wordWrap": "on",
-  "editor.renderWhitespace": "none",
-  "editor.snippetSuggestions": "top",
-  "editor.autoIndent": "advanced",
-  "editor.fontSize": 20,
+  "editor.inlayHints.enabled": false,
   "editor.fontLigatures": true,
-  "editor.detectIndentation": false,
+  "editor.inlineSuggest.enabled": true,
+  "editor.fontFamily": "Fira Code",
+  "editor.codeLens": false,
   "editor.tabSize": 2,
-  "editor.foldingStrategy": "indentation",
-  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.snippetSuggestions": "inline",
+  "editor.renderWhitespace": "none",
+  "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.organizeImports": true
   },
-  "prettier.printWidth": 80,
-  "prettier.singleQuote": true,
-  "prettier.arrowParens": "avoid",
+  "editor.fontSize": 20,
+  "editor.foldingStrategy": "indentation",
+  "editor.linkedEditing": true,
+  "editor.wordWrap": "on",
+  "editor.accessibilitySupport": "off",
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.formatOnType": true,
+  "editor.detectIndentation": false,
+  "editor.autoIndent": "advanced",
+
+  // === diff editor ===
+  "diffEditor.renderSideBySide": false,
+
+  // === window ===
+  "window.openFilesInNewWindow": "off",
+
+  // === todohighlight ===
+  "todohighlight.keywords": [
+    "REVIEW:",
+    {
+      "color": "gold",
+      "text": "NOTE:",
+      "backgroundColor": "green"
+    },
+    {
+      "color": "#000",
+      "text": "HACK:",
+      "backgroundColor": "gold"
+    },
+    {
+      "color": "white",
+      "text": "TODO:",
+      "backgroundColor": "#920d01"
+    },
+    {
+      "color": "white",
+      "text": "FIXME:",
+      "backgroundColor": "#3c2fca"
+    }
+  ],
+
+  // === eslint ===
   "eslint.workingDirectories": [
     {
       "mode": "auto"
     }
   ],
-  "html.format.wrapAttributes": "force-aligned",
-  "html.format.maxPreserveNewLines": 2,
-  "html.format.endWithNewline": true,
-  "files.hotExit": "onExit",
-  "files.defaultLanguage": "${activeEditorLanguage}",
-  "files.trimTrailingWhitespace": true,
-  "files.associations": {
-    ".njk": "html",
-    ".hbs": "html",
-    ".handlebars": "html",
-    ".pug": "html"
-  },
-  "emmet.triggerExpansionOnTab": true,
-  "emmet.includeLanguages": {
-    "nunjucks": "html",
-    "handlebars": "html"
-  },
-  "workbench.editor.highlightModifiedTabs": true,
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "liveServer.settings.CustomBrowser": "chrome",
-  "liveServer.settings.port": 3300,
-  "liveServer.settings.donotShowInfoMsg": true,
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.linkedEditing": false
-  },
-  "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "todohighlight.keywords": [
-    "DEBUG:",
-    "REVIEW:",
-    {
-      "text": "NOTE:",
-      "color": "gold",
-      "backgroundColor": "green"
-    },
-    {
-      "text": "HACK:",
-      "color": "#000",
-      "backgroundColor": "gold"
-    },
-    {
-      "text": "TODO:",
-      "color": "white",
-      "backgroundColor": "#920d01"
-    },
-    {
-      "text": "TODO_2:",
-      "color": "white",
-      "backgroundColor": "#d85f00"
-    },
-    {
-      "text": "TODO_3:",
-      "color": "white",
-      "backgroundColor": "#977c1e"
-    },
-    {
-      "text": "DONE:",
-      "color": "white",
-      "backgroundColor": "#1bac00"
-    },
-    {
-      "text": "FIXME:",
-      "color": "white",
-      "backgroundColor": "#3c2fca"
-    },
-    {
-      "text": "TDD:",
-      "color": "#323131",
-      "backgroundColor": "#7b8988"
-    }
-  ],
-  "workbench.colorCustomizations": {
-    "tab.activeModifiedBorder": "#fd951f9f",
-    "editor.lineHighlightBackground": "#8d8d8d2d",
-    "editor.selectionBackground": "#424242a1",
-    "editor.wordHighlightBackground": "#d3d3d348",
-    "editorCursor.foreground": "#ffffff"
-  },
+
+  // === bracketPairColorizer ===
   "bracketPairColorizer.showBracketsInGutter": true,
   "bracketPairColorizer.showHorizontalScopeLine": false,
   "bracketPairColorizer.consecutivePairColors": [
@@ -131,95 +86,101 @@
     "{}",
     ["</", ">"],
     ["<", "/>"],
+    ["(", ")"],
     "<>",
     ["#FFFFFF"],
     "#75715E"
   ],
-  "terminal.integrated.rendererType": "dom",
-  "git.autofetch": true,
+
+  // === emmet ===
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.includeLanguages": {
+    "handlebars": "html",
+    "nunjucks": "html"
+  },
+
+  // === per lang ===
+  "html.format.wrapAttributes": "force-aligned",
+  "html.format.endWithNewline": true,
+  "html.format.maxPreserveNewLines": 2,
+  "typescript.updateImportsOnFileMove.enabled": "always",
   "javascript.updateImportsOnFileMove.enabled": "always",
+
+  // === update ===
   "update.mode": "start",
-  "window.openFilesInNewWindow": "off",
-  "[jsonc]": {
+
+  // === explorer ===
+  "explorer.confirmDragAndDrop": false,
+
+  // === files ===
+  "files.trimTrailingWhitespace": true,
+  "files.defaultLanguage": "${activeEditorLanguage}",
+  "files.hotExit": "onExit",
+  "files.associations": {
+    "*.pug": "html",
+    "*.handlebars": "html",
+    "*.code-workspace": "json",
+    "*.njk": "html",
+    "*.hbs": "html"
+  },
+
+  // === workbench ===
+  "workbench.iconTheme": "file-icons",
+  "workbench.colorTheme": "One Dark Pro",
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.colorCustomizations": {
+    "editor.selectionBackground": "#424242a1",
+    "editor.wordHighlightBackground": "#d3d3d348",
+    "tab.activeModifiedBorder": "#fd951f9f",
+    "editor.lineHighlightBackground": "#8d8d8d2d",
+    "editorCursor.foreground": "#ffffff"
+  },
+
+  // === sync ===
+  "sync.gist": "GIST_KEY_HERE",
+
+  // === langs ===
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.linkedEditing": false
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.linkedEditing": false
   },
-  "[csharp]": {
-    "editor.defaultFormatter": "Leopotam.csharpfixformat"
+  "[yaml]": {
+    "editor.tabSize": 2,
+    "editor.renderWhitespace": "boundary",
+    "editor.autoIndent": "advanced",
+    "editor.insertSpaces": true
   },
-  "csharpfixformat.style.spaces.insideEmptyBraces": false,
-  "csharpfixformat.style.spaces.beforeParenthesis": false,
-  "python.formatting.provider": "black",
-  "python.pythonPath": "python",
-  "python.linting.enabled": true,
-  "[python]": {
-    "editor.tabSize": 4,
-    "editor.formatOnSave": true,
-    "editor.renderWhitespace": "boundary"
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[lisp]": {
-    "editor.renderWhitespace": "all"
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 2 }",
-  "go.autocompleteUnimportedPackages": true,
-  "todo-tree.tree.showScanModeButton": false,
-  "todo-tree.highlights.enabled": false,
-  "editor.suggestSelection": "first",
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "pgsql.connections": [
-    {
-      "host": "localhost",
-      "dbname": "test",
-      "user": "postgres",
-      "password": "",
-      "emptyPasswordInput": false,
-      "port": "5432",
-      "profileName": "postgres",
-      "connectTimeout": 15,
-      "encrypt": false,
-      "applicationName": "vscode-pgsql",
-      "hostaddr": "",
-      "options": "",
-      "sslmode": "prefer",
-      "clientEncoding": "",
-      "sslcompression": true,
-      "sslcert": "",
-      "sslkey": "",
-      "sslrootcert": "",
-      "sslcrl": "",
-      "requirepeer": ""
-    }
-  ],
-  "workbench.iconTheme": "file-icons",
-  "editor.linkedEditing": true,
-  "python.languageServer": "Pylance",
-  "java.semanticHighlighting.enabled": false,
-  "latex-workshop.view.pdf.viewer": "tab",
-  "latex-workshop.latexindent.path": "/Library/TeX/texbin/latexindent",
-  "latex-workshop.message.error.show": false,
+
+  // === security ===
+  "security.workspace.trust.untrustedFiles": "newWindow",
+  "security.workspace.trust.enabled": false,
+
+  // === tex ===
   "latex-workshop.intellisense.package.enabled": true,
-  "debug.javascript.autoAttachFilter": "onlyWithFlag",
-  "git.confirmSync": false,
-  "dart.flutterSdkPath": "/Users/alex_kovalev/flutter",
-  "explorer.confirmDragAndDrop": false,
-  "workbench.startupEditor": "newUntitledFile",
-  "liveServer.settings.donotVerifyTags": true,
-  "workbench.editorAssociations": {
-    "*.ipynb": "jupyter-notebook"
-  },
-  "todo-tree.general.tags": [
-    "BUG",
-    "HACK",
-    "FIXME",
-    "TODO",
-    "XXX",
-    "[ ]",
-    "[x]"
-  ],
-  "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
-  "angular.experimental-ivy": true,
-  "workbench.colorTheme": "One Dark Pro",
+  "latex-workshop.message.error.show": false,
+  "latex-workshop.latexindent.path": "/Library/TeX/texbin/latexindent",
+  "latex-workshop.view.pdf.viewer": "tab"
 }
