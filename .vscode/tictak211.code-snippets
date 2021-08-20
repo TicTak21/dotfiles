@@ -1,0 +1,12 @@
+{
+  "date_now": {
+    "prefix": "date_now",
+    "body": "\"$CURRENT_DATE-$CURRENT_MONTH-$CURRENT_YEAR\"",
+    "description": "Generate current date in format `dd-mm-yyyy`"
+  },
+  "time_now": {
+    "prefix": "time_now",
+    "body": "\"$CURRENT_HOUR:$CURRENT_MINUTE\"",
+    "description": "Generate current time in format `hh:mm`"
+  }
+}
