@@ -1,11 +1,11 @@
 {
   // === terminal ===
-  "terminal.integrated.tabs.showActiveTerminal": "always",
-  "terminal.integrated.fontFamily": "Hack Nerd Font",
-  "terminal.integrated.fontSize": 15,
-  "terminal.integrated.tabs.hideCondition": "never",
   "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.fontFamily": "Hack Nerd Font Mono",
+  "terminal.integrated.fontSize": 15,
   "terminal.integrated.tabs.enabled": true,
+  "terminal.integrated.tabs.showActiveTerminal": "always",
+  "terminal.integrated.tabs.hideCondition": "never",
 
   // === git ===
   "gitlens.advanced.messages": {
@@ -15,27 +15,27 @@
   "git.autofetch": true,
 
   // === editor ===
-  "editor.suggestSelection": "first",
-  "editor.formatOnPaste": true,
-  "editor.inlayHints.enabled": false,
+  "editor.fontFamily": "Hack Nerd Font Mono",
+  "editor.fontSize": 20,
   "editor.fontLigatures": true,
-  "editor.inlineSuggest.enabled": true,
-  "editor.fontFamily": "Fira Code",
-  "editor.codeLens": false,
   "editor.tabSize": 2,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "editor.suggestSelection": "first",
+  "editor.inlayHints.enabled": false,
+  "editor.inlineSuggest.enabled": true,
+  "editor.codeLens": false,
   "editor.snippetSuggestions": "inline",
   "editor.renderWhitespace": "none",
-  "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.organizeImports": true
   },
-  "editor.fontSize": 20,
   "editor.foldingStrategy": "indentation",
   "editor.linkedEditing": true,
   "editor.wordWrap": "on",
   "editor.accessibilitySupport": "off",
   "editor.multiCursorModifier": "ctrlCmd",
-  "editor.formatOnType": true,
   "editor.detectIndentation": false,
   "editor.autoIndent": "advanced",
 
@@ -138,7 +138,7 @@
   },
 
   // === sync ===
-  "sync.gist": "GIST_KEY_HERE",
+  "sync.gist": "GIST_TOKEN_HERE",
 
   // === langs ===
   "[html]": {
