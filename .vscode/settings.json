@@ -77,7 +77,8 @@
     }
   ],
 
-  // === bracketPairColorizer ===
+  // === brackets ===
+  "editor.bracketPairColorization.enabled": false,
   "bracketPairColorizer.showBracketsInGutter": true,
   "bracketPairColorizer.showHorizontalScopeLine": false,
   "bracketPairColorizer.consecutivePairColors": [
@@ -138,7 +139,7 @@
   },
 
   // === sync ===
-  "sync.gist": "GIST_TOKEN_HERE",
+  "sync.gist": "f13840b44caa5f255e3a2685f33d07c3",
 
   // === langs ===
   "[html]": {
