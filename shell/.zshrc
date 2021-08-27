@@ -14,6 +14,9 @@ export PATH="$PATH:/Users/alex_kovalev/.dotnet/tools"
 # sbin
 export PATH="/usr/local/sbin:$PATH"
 
+# tex
+export PATH="/Library/TeX/texbin/:$PATH"
+
 # === Plugins ===
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
@@ -51,13 +54,13 @@ alias gcm='git commit -m'
 alias gb='git branch'
 alias gc='git checkout'
 alias gp='git push'
-alias gpu='git push -u origin master'
+alias gpu='git push -u origin'
 alias grc="git reset --hard && git clean -fd"
 
 # npm
 alias ns='npm start'
 alias nb='npm build'
-alias npm_g_list='npm list -g --depth 0'
+alias npm_g_ls='npm -g ls'
 
 # yarn
 alias y='yarn'
@@ -65,11 +68,12 @@ alias ys='yarn start'
 alias ya='yarn add'
 alias yr='yarn run'
 alias yrm='yarn remove'
-alias yarn_g_list='yarn global list'
+alias yarn_g_ls='yarn global list'
 
 # pnpm
 alias pn='pnpm'
 alias px='pnpx'
+alias pn_g_ls='pn -g ls'
 
 # mysql
 alias mysql='/usr/local/mysql/bin/mysql -uroot -p'
