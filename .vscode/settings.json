@@ -138,9 +138,6 @@
     "editorCursor.foreground": "#ffffff"
   },
 
-  // === sync ===
-  "sync.gist": "f13840b44caa5f255e3a2685f33d07c3",
-
   // === langs ===
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
