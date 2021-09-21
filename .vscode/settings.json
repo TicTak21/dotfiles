@@ -26,7 +26,7 @@
   "editor.inlayHints.enabled": false,
   "editor.inlineSuggest.enabled": true,
   "editor.codeLens": false,
-  "editor.snippetSuggestions": "inline",
+  "editor.snippetSuggestions": "top",
   "editor.renderWhitespace": "none",
   "editor.codeActionsOnSave": {
     "source.organizeImports": true
@@ -138,6 +138,9 @@
     "editorCursor.foreground": "#ffffff"
   },
 
+  // === sync ===
+  "sync.gist": "SYNC_GIST",
+
   // === langs ===
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -170,6 +173,10 @@
   },
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": true
   },
 
   // === security ===
