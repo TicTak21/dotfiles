@@ -1,8 +1,8 @@
-cd /Users/alex_kovalev/Desktop/Projects
-set lines=100 columns=100
+cd /Users/alex_kovalev/projects
 set number
 set linebreak
 set showbreak=+++
+set noswapfile
 set textwidth=120
 set showmatch
 set visualbell
