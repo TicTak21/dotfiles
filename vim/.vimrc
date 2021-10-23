@@ -1,5 +1,5 @@
 cd /Users/alex_kovalev/projects
-set number
+set relativenumber
 set linebreak
 set showbreak=+++
 set noswapfile
@@ -51,3 +51,8 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'joshdick/onedark.vim'
 
 call plug#end()
+
+nnoremap <up> <nop>
+nnoremap <down> <nop>
+nnoremap <left> <nop>
+nnoremap <right> <nop>
