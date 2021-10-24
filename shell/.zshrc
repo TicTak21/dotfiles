@@ -2,9 +2,6 @@
 # Oh-my-zsh
 export ZSH="/Users/alex_kovalev/.oh-my-zsh"
 
-# PostrgeSQL
-export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/12/bin"
-
 # yarn
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
@@ -15,7 +12,7 @@ export PATH="$PATH:/Users/alex_kovalev/.dotnet/tools"
 export PATH="/usr/local/sbin:$PATH"
 
 # tex
-export PATH="/Library/TeX/texbin/:$PATH"
+export PATH="/usr/local/texlive/2020/bin/x86_64-darwin:$PATH"
 
 # === Plugins ===
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
