@@ -72,8 +72,8 @@ alias pn='pnpm'
 alias px='pnpx'
 alias pn_g_ls='pn -g ls'
 
-# mysql
-alias mysql='/usr/local/mysql/bin/mysql -uroot -p'
+# archives
+alias untar='tar -xvzf $1'
 
 # === spaceship-prompt ===
 SPACESHIP_DOCKER_SHOW=false
