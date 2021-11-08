@@ -56,7 +56,6 @@ alias grc="git reset --hard && git clean -fd"
 
 # npm
 alias ns='npm start'
-alias nb='npm build'
 alias npm_g_ls='npm -g ls'
 
 # yarn
