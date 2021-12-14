@@ -39,6 +39,7 @@
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.detectIndentation": false,
   "editor.autoIndent": "advanced",
+  "editor.bracketPairColorization.enabled": true,
 
   // === diff editor ===
   "diffEditor.renderSideBySide": false,
@@ -76,22 +77,6 @@
     {
       "mode": "auto"
     }
-  ],
-
-  // === brackets ===
-  "editor.bracketPairColorization.enabled": false,
-  "bracketPairColorizer.showBracketsInGutter": true,
-  "bracketPairColorizer.showHorizontalScopeLine": false,
-  "bracketPairColorizer.consecutivePairColors": [
-    "()",
-    "[]",
-    "{}",
-    ["</", ">"],
-    ["<", "/>"],
-    ["(", ")"],
-    "<>",
-    ["#FFFFFF"],
-    "#75715E"
   ],
 
   // === emmet ===
@@ -136,7 +121,14 @@
     "editor.wordHighlightBackground": "#d3d3d348",
     "tab.activeModifiedBorder": "#fd951f9f",
     "editor.lineHighlightBackground": "#8d8d8d2d",
-    "editorCursor.foreground": "#ffffff"
+    "editorCursor.foreground": "#ffffff",
+    "editorBracketHighlight.foreground1": "#ffffff",
+    "editorBracketHighlight.foreground2": "#ffffff",
+    "editorBracketHighlight.foreground3": "#ffffff",
+    "editorBracketHighlight.foreground4": "#ffffff",
+    "editorBracketHighlight.foreground5": "#ffffff",
+    "editorBracketHighlight.foreground6": "#ffffff",
+    "editorBracketHighlight.unexpectedBracket.foreground": "#fd951f9f"
   },
 
   // === sync ===
