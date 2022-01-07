@@ -60,10 +60,6 @@ alias npm_g_ls='npm -g ls'
 
 # yarn
 alias y='yarn'
-alias ys='yarn start'
-alias ya='yarn add'
-alias yr='yarn run'
-alias yrm='yarn remove'
 alias yarn_g_ls='yarn global list'
 
 # pnpm
