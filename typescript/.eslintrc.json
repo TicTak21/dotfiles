@@ -26,5 +26,13 @@
     ],
     "@typescript-eslint/no-inferrable-types": "off",
     "@typescript-eslint/no-empty-function": ["warn"]
-  }
+  },
+  "overrides": [
+    {
+      "files": ["*.js"],
+      "rules": {
+        "@typescript-eslint/no-var-requires": "off"
+      }
+    }
+  ]
 }
