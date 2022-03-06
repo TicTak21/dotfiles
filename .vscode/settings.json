@@ -9,9 +9,6 @@
   "terminal.integrated.persistentSessionReviveProcess": "never",
 
   // === git ===
-  "gitlens.advanced.messages": {
-    "suppressImproperWorkspaceCasingWarning": true
-  },
   "git.confirmSync": false,
   "git.autofetch": true,
 
@@ -40,6 +37,7 @@
   "editor.detectIndentation": false,
   "editor.autoIndent": "advanced",
   "editor.bracketPairColorization.enabled": true,
+  "editor.unicodeHighlight.ambiguousCharacters": false,
 
   // === diff editor ===
   "diffEditor.renderSideBySide": false,
@@ -130,6 +128,9 @@
     "editorBracketHighlight.foreground6": "#ffffff",
     "editorBracketHighlight.unexpectedBracket.foreground": "#fd951f9f"
   },
+
+  // === sync ===
+  "sync.gist": "f13840b44caa5f255e3a2685f33d07c3",
 
   // === langs ===
   "[html]": {
