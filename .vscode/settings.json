@@ -38,6 +38,7 @@
   "editor.autoIndent": "advanced",
   "editor.bracketPairColorization.enabled": true,
   "editor.unicodeHighlight.ambiguousCharacters": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
 
   // === diff editor ===
   "diffEditor.renderSideBySide": false,
@@ -129,6 +130,9 @@
     "editorBracketHighlight.unexpectedBracket.foreground": "#fd951f9f"
   },
 
+  // === sync ===
+  "sync.gist": "f13840b44caa5f255e3a2685f33d07c3",
+
   // === langs ===
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -158,6 +162,9 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[markdown]": {
