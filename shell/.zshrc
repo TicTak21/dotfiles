@@ -55,7 +55,6 @@ alias gpu='git push -u origin'
 alias grc="git reset --hard && git clean -fd"
 
 # npm
-alias ns='npm start'
 alias npm_g_ls='npm -g ls'
 
 # yarn
@@ -64,7 +63,8 @@ alias yarn_g_ls='yarn global list'
 
 # pnpm
 alias pn='pnpm'
-alias px='pnpx'
+alias pdlx='pnpm dlx'
+alias pex='pnpm exec'
 alias pn_g_ls='pn -g ls'
 
 # archives
