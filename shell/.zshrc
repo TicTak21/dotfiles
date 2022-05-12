@@ -2,6 +2,10 @@
 # Oh-my-zsh
 export ZSH="/Users/alex_kovalev/.oh-my-zsh"
 
+# pnpm
+export PNPM_HOME="/Users/alex_kovalev/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+
 # yarn
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
