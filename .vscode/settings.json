@@ -40,7 +40,7 @@
   "editor.unicodeHighlight.ambiguousCharacters": false,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
 
-  // === diff editor ===
+  // === diffEditor ===
   "diffEditor.renderSideBySide": false,
 
   // === window ===
@@ -131,7 +131,7 @@
   },
 
   // === sync ===
-  "sync.gist": "SYNC_GIST",
+  "sync.gist": "f13840b44caa5f255e3a2685f33d07c3",
 
   // === langs ===
   "[html]": {
@@ -169,7 +169,11 @@
   },
   "[markdown]": {
     "editor.wordWrap": "on",
-    "editor.quickSuggestions": true
+    "editor.quickSuggestions": {
+      "comments": "on",
+      "strings": "on",
+      "other": "on"
+    }
   },
 
   // === security ===
